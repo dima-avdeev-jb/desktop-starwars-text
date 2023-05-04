@@ -27,6 +27,7 @@ Box(Modifier.fillMaxSize().background(Color.Black)) {
             color = Color.Yellow,
             textAlign = TextAlign.Center
         )
+        Box(Modifier.height(5_000.dp))
     }
 }
 ```
