@@ -12,6 +12,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
@@ -41,11 +42,11 @@ fun main() = application {
             LaunchedEffect(Unit) {
                 while (true) {
                     withFrameMillis { }
-                    scrollState.scrollBy(2f)
+                    scrollState.scrollBy(0.85f)
                 }
             }
             Column(Modifier.fillMaxSize().align(Alignment.Center).graphicsLayer {
-                this.rotationX = 65f
+                this.rotationX = 55f
             }.verticalScroll(scrollState), horizontalAlignment = Alignment.CenterHorizontally) {
                 Image(painter, null)
                 Text(
@@ -55,6 +56,7 @@ fun main() = application {
                     color = Color.Yellow,
                     textAlign = TextAlign.Center
                 )
+                Box(Modifier.height(5_000.dp))
             }
         }
     }
