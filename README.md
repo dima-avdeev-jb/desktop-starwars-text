@@ -8,7 +8,7 @@
 
 
 ```Kotlin
-        Box(
+Box(
     Modifier.fillMaxSize()
         .background(Color.Black)
 ) {
