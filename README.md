@@ -1,6 +1,8 @@
 # desktop-starwars-text
 
 
+Multiplatform version here: https://github.com/dima-avdeev-jb/multiplatform-starwars
+
 
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/99798741/236287619-b5bea048-1adc-43d5-90bf-b6edf44fe1a5.png">
